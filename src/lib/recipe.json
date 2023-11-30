@@ -1,0 +1,279 @@
+{
+  "circuit": {
+    "items": {
+      "copper_wire": 1,
+      "gold": 1
+    },
+    "craft": "crafter_mk1"
+  },
+  "fan": {
+    "items": {
+      "circuit": 1,
+      "diamond_gear": 3,
+      "aluminium": 6
+    },
+    "craft": "crafter_mk2"
+  },
+  "power_supply": {
+    "items": {
+      "circuit": 1,
+      "diamond": 6,
+      "aluminium_liquid": 3
+    },
+    "craft": "crafter_mk2"
+  },
+  "processor": {
+    "items": {
+      "circuit": 1,
+      "gold_liquid": 3,
+      "diamond_wire": 3
+    },
+    "craft": "crafter_mk2"
+  },
+  "computer": {
+    "items": {
+      "fan": 1,
+      "power_supply": 1,
+      "processor": 1
+    },
+    "craft": "crafter_mk2"
+  },
+  "server_rack": {
+    "items": {
+      "aluminium": 1,
+      "iron": 1
+    },
+    "craft": "crafter_mk1"
+  },
+  "super_computer": {
+    "items": {
+      "computer": 2,
+      "server_rack": 1,
+      "circuit": 3,
+      "gold_cable": 3
+    },
+    "craft": "crafter_mk3"
+  },
+  "ai_processor": {
+    "items": {
+      "circuit": 10,
+      "super_computer": 1,
+      "copper_plate": 6,
+      "copper_cable": 4
+    },
+    "craft": "crafter_mk3"
+  },
+  "ai_robot_head": {
+    "items": {
+      "ai_processor": 1,
+      "gold_plate": 5,
+      "diamond_cable": 10,
+      "circuit": 10
+    },
+    "craft": "crafter_mk3"
+  },
+  "battery": {
+    "items": {
+      "copper": 1,
+      "copper_liquid": 1
+    },
+    "craft": "crafter_mk1"
+  },
+  "engine": {
+    "items": {
+      "iron_gear": 1,
+      "iron": 1
+    },
+    "craft": "crafter_mk1"
+  },
+  "advanced_engine": {
+    "items": {
+      "engine": 5,
+      "circuit": 5,
+      "diamond": 10
+    },
+    "craft": "crafter_mk2"
+  },
+  "solar_cell": {
+    "items": {
+      "diamond_liquid": 1,
+      "gold": 1
+    },
+    "craft": "crafter_mk1"
+  },
+  "electric_board": {
+    "items": {
+      "copper_wire": 1,
+      "aluminium": 1
+    },
+    "craft": "crafter_mk1"
+  },
+  "heater_plate": {
+    "items": {
+      "iron_wire": 1,
+      "aluminium": 1
+    },
+    "craft": "crafter_mk1"
+  },
+  "solar_panel": {
+    "items": {
+      "solar_cell": 2,
+      "circuit": 1,
+      "electric_board": 2
+    },
+    "craft": "crafter_mk2"
+  },
+  "lazer": {
+    "items": {
+      "battery": 5,
+      "heater_plate": 5,
+      "iron_liquid": 5
+    },
+    "craft": "crafter_mk2"
+  },
+  "electric_engine": {
+    "items": {
+      "battery": 2,
+      "advanced_engine": 2,
+      "electric_board": 2,
+      "iron_plate": 5
+    },
+    "craft": "crafter_mk3"
+  },
+  "ai_robot_arms": {
+    "items": {
+      "lazer": 2,
+      "aluminium_plate": 2,
+      "aluminium_cable": 3,
+      "iron": 8
+    },
+    "craft": "crafter_mk3"
+  },
+  "ai_robot_body": {
+    "items": {
+      "electric_engine": 1,
+      "solar_panel": 2,
+      "ai_robot_arms": 1,
+      "electric_board":5
+    },
+    "craft": "crafter_mk3"
+  },
+  "ai_robot": {
+    "items": {
+      "ai_robot_body": 1,
+      "ai_robot_head": 1,
+      "iron_plate": 10,
+      "diamond_cable": 5
+    },
+    "craft": "crafter_mk3"
+  },
+  "plutonium_cell": {
+    "items": {
+      "plutonium": 10,
+      "solar_cell": 10,
+      "diamond_liquid": 5,
+      "gold_cable": 5,
+      "copper_cable": 5
+    },
+    "craft": "radioactive_crafter_mk1"
+  },
+  "uranium_cell": {
+    "items": {
+      "uranium": 10,
+      "solar_cell": 10,
+      "diamond_liquid": 5,
+      "gold_cable": 5,
+      "copper_cable": 5
+    },
+    "craft": "radioactive_crafter_mk1"
+  },
+  "nuclear_cell": {
+    "items": {
+      "uranium_cell": 2,
+      "plutonium_cell": 2,
+      "solar_cell": 5,
+      "electric_board": 5,
+      "heater_plate": 5
+    },
+    "craft": "radioactive_crafter_mk1"
+  },
+  "nuclear_core": {
+    "items": {
+      "nuclear_cell": 3,
+      "uranium_cell": 5,
+      "plutonium_cell": 5,
+      "processor": 10,
+      "diamond_cable": 4,
+      "gold_cable": 4
+    },
+    "craft": "radioactive_crafter_mk2"
+  },
+  "plutonium_circuit": {
+    "items": {
+      "plutonium": 10,
+      "circuit": 10,
+      "copper": 10,
+      "gold_cable": 3,
+      "diamond_wire": 10
+    },
+    "craft": "radioactive_crafter_mk1"
+  },
+  "uranium_circuit": {
+    "items": {
+      "uranium": 10,
+      "circuit": 10,
+      "copper": 10,
+      "gold_cable": 3,
+      "diamond_wire": 10
+    },
+    "craft": "radioactive_crafter_mk1"
+  },
+  "nuclear_circuit": {
+    "items": {
+      "uranium_circuit": 2,
+      "plutonium_circuit": 2,
+      "circuit": 5,
+      "gold_cable": 5,
+      "processor": 3
+    },
+    "craft": "radioactive_crafter_mk1"
+  },
+  "nuclear_processor": {
+    "items": {
+      "nuclear_circuit": 3,
+      "uranium_circuit": 5,
+      "plutonium_circuit": 5,
+      "ai_processor": 2,
+      "processor": 5,
+      "diamond_plate": 10
+    },
+    "craft": "radioactive_crafter_mk2"
+  },
+  "explosive": {
+    "items": {
+      "circuit": 5,
+      "diamond_wire": 10,
+      "copper_cable": 10,
+      "heater_plate": 10
+    },
+    "craft": "crafter_mk3"
+  },
+  "trigger": {
+    "items": {
+      "iron": 40,
+      "diamond_wire": 10,
+      "circuit": 5,
+      "electric_board": 5
+    },
+    "craft": "crafter_mk3"
+  },
+  "ignition_system": {
+    "items": {
+      "trigger": 2,
+      "explosive": 5,
+      "ai_processor": 2,
+      "battery": 5
+    },
+    "craft": "crafter_mk3"
+  }
+}
