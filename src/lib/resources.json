@@ -275,5 +275,241 @@
       "battery": 5
     },
     "craft": "crafter_mk3"
+  },
+  "atomic_bomb": {
+    "items": {
+      "nuclear_processor": 2,
+      "nuclear_core": 2,
+      "ignition_system": 5,
+      "nuclear_cell": 5,
+      "uranium": 30,
+      "plutonium": 30
+    },
+    "craft": "radioactive_crafter_mk2"
+  },
+  "ai_robot_bomber": {
+    "items": {
+      "atomic_bomb": 1,
+      "ai_robot": 1,
+      "ai_processor": 5,
+      "nuclear_cell": 5,
+      "nuclear_processor": 5,
+      "nuclear_circuit": 5
+    },
+    "craft": "radioactive_crafter_mk2"
+  },
+  "aluminium": {
+    "items": {},
+    "craft": "starter"
+  },
+  "copper": {
+    "items": {},
+    "craft": "starter"
+  },
+  "diamond": {
+    "items": {},
+    "craft": "starter"
+  },
+  "gold": {
+    "items": {},
+    "craft": "starter"
+  },
+  "iron": {
+    "items": {},
+    "craft": "starter"
+  },
+  "aluminium_wire": {
+    "items": {
+      "aluminium": 1
+    },
+    "craft": "wire_drawer"
+  },
+  "copper_wire": {
+    "items": {
+      "copper": 1
+    },
+    "craft": "wire_drawer"
+  },
+  "diamond_wire": {
+    "items": {
+      "diamond": 1
+    },
+    "craft": "wire_drawer"
+  },
+  "gold_wire": {
+    "items": {
+      "gold": 1
+    },
+    "craft": "wire_drawer"
+  },
+  "iron_wire": {
+    "items": {
+      "iron": 1
+    },
+    "craft": "wire_drawer"
+  },
+  "aluminium_gear": {
+    "items": {
+      "aluminium": 1
+    },
+    "craft": "cutter"
+  },
+  "copper_gear": {
+    "items": {
+      "copper": 1
+    },
+    "craft": "cutter"
+  },
+  "diamond_gear": {
+    "items": {
+      "diamond": 1
+    },
+    "craft": "cutter"
+  },
+  "gold_gear": {
+    "items": {
+      "gold": 1
+    },
+    "craft": "cutter"
+  },
+  "iron_gear": {
+    "items": {
+      "iron": 1
+    },
+    "craft": "cutter"
+  },
+  "aluminium_liquid": {
+    "items": {
+      "aluminium": 1
+    },
+    "craft": "furnace"
+  },
+  "copper_liquid": {
+    "items": {
+      "copper": 1
+    },
+    "craft": "furnace"
+  },
+  "diamond_liquid": {
+    "items": {
+      "diamond": 1
+    },
+    "craft": "furnace"
+  },
+  "gold_liquid": {
+    "items": {
+      "gold": 1
+    },
+    "craft": "furnace"
+  },
+  "iron_liquid": {
+    "items": {
+      "iron": 1
+    },
+    "craft": "furnace"
+  },
+  "aluminium_plate": {
+    "items": {
+      "aluminium": 1
+    },
+    "craft": "hydraulic_press"
+  },
+  "copper_plate": {
+    "items": {
+      "copper": 1
+    },
+    "craft": "hydraulic_press"
+  },
+  "diamond_plate": {
+    "items": {
+      "diamond": 1
+    },
+    "craft": "hydraulic_press"
+  },
+  "gold_plate": {
+    "items": {
+      "gold": 1
+    },
+    "craft": "hydraulic_press"
+  },
+  "iron_plate": {
+    "items": {
+      "iron": 1
+    },
+    "craft": "hydraulic_press"
+  },
+  "aluminium_cable": {
+    "items": {
+      "aluminium_wire": 3
+    },
+    "craft": "cable_maker"
+  },
+  "copper_cable": {
+    "items": {
+      "copper_wire": 3
+    },
+    "craft": "cable_maker"
+  },
+  "diamond_cable": {
+    "items": {
+      "diamond_wire": 3
+    },
+    "craft": "cable_maker"
+  },
+  "gold_cable": {
+    "items": {
+      "gold_wire": 3
+    },
+    "craft": "cable_maker"
+  },
+  "iron_cable": {
+    "items": {
+      "iron_wire": 3
+    },
+    "craft": "cable_maker"
+  },
+  "plutonium": {
+    "items": {},
+    "craft": "radioactive_starter"
+  },
+  "uranium": {
+    "items": {},
+    "craft": "radioactive_starter"
+  },
+  "plutonium_wire": {
+    "items": {
+      "plutonium": 1
+    },
+    "craft": "wire_drawer"
+  },
+  "uranium_wire": {
+    "items": {
+      "uranium": 1
+    },
+    "craft": "wire_drawer"
+  },
+  "plutonium_cable": {
+    "items": {
+      "plutonium_wire": 3
+    },
+    "craft": "wire_drawer"
+  },
+  "uranium_cable": {
+    "items": {
+      "uranium_wire": 3
+    },
+    "craft": "wire_drawer"
+  },
+  "plutonium_refined": {
+    "items": {
+      "plutonium": 1
+    },
+    "craft": "refinery"
+  },
+  "uranium_refined": {
+    "items": {
+      "uranium": 1
+    },
+    "craft": "refinery"
   }
 }
