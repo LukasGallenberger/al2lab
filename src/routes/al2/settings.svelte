@@ -24,7 +24,7 @@
           </Tooltip.Root>
           <span class="w-16">{$settings[machine][0].toFixed(1)}s</span>
           {#if machine.includes('starter')}
-          <Slider max={5} min={0.5} step={0.5} bind:value={$settings[machine]} />
+          <Slider max={5} min={0.25} step={0.25} bind:value={$settings[machine]} /> 
           {:else}
           <Slider max={5} min={1} bind:value={$settings[machine]} />
           {/if}
