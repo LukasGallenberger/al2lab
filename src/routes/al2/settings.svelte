@@ -1,9 +1,7 @@
 <script>
   import * as Accordion from "$lib/components/ui/accordion" 
-  import { Button } from "$lib/components/ui/button"
-  import { Input } from "$lib/components/ui/input"
-  import { Slider } from "$lib/components/ui/slider"
   import * as Tooltip from "$lib/components/ui/tooltip"
+  import { Slider } from "$lib/components/ui/slider"
 
   import machines from '$lib/machines.json'
   import { settings } from './stores'

@@ -12,7 +12,7 @@
     <Card.Title>Factory</Card.Title>
   </Card.Header>
   <Card.Content>
-    <Tabs.Root value="data">
+    <Tabs.Root value="list">
       <Tabs.List>
         <Tabs.Trigger value="list" class="flex gap-2">
           <ListTree size="16"/> List
