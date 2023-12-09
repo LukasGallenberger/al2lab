@@ -22,8 +22,12 @@
               {machine[0].toUpperCase() + machine.replaceAll('_', ' ').slice(1)}
             </Tooltip.Content>
           </Tooltip.Root>
-          <span class="w-16">{speed[$settings[machine][0]].toFixed(2)}s</span>
-          <Slider max={speed.length - 1} min={0} step={1} bind:value={$settings[machine]} />
+          <span class="w-16">{$settings[machine][0].toFixed(1)}s</span>
+          {#if machine.includes('starter')}
+          <Slider max={5} min={0.25} step={0.25} bind:value={$settings[machine]} /> 
+          {:else}
+          <Slider max={5} min={1} bind:value={$settings[machine]} />
+          {/if}
         </div>
         {/each}
       </div>
