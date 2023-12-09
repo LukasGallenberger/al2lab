@@ -1,9 +1,13 @@
-import { writable, get, derived } from 'svelte/store'
+import { writable, get, derived, readable } from 'svelte/store'
 import resources from '$lib/resources.json'
 import machines from '$lib/machines.json'
 
 export const objective = writable({ item: '', count: 1 })
 export const settings = writable(Object.fromEntries(Object.keys(machines).map((key) => [key, [0]])))
+
+export const toFix = derived([objective], ([{ _, count }]) => {
+  return count % 1 === 0 ? 1 : count.toString().split('.')[1].length + 1
+})
 
 const expand = (item, count, depth = 0) => {
   let list = [{

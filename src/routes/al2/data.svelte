@@ -4,7 +4,7 @@
   import { ChevronsUpDown, ChevronRight } from "lucide-svelte"
 
   import resources from '$lib/resources.json'
-  import { data } from './stores'
+  import { data, toFix } from './stores'
 </script>
 
 <div class="flex flex-col">
@@ -30,11 +30,11 @@
       <span class="text-sm font-semibold">{item[0].toUpperCase() + item.replaceAll('_', ' ').slice(1)}</span>
     </div>
     <div class="flex items-center justify-end gap-2">
-      <span>{count}</span>
+      <span>{count.toFixed($toFix)}</span>
       <img src={'/assets/RESOURCES_' + item.toUpperCase() + '.png'} alt={item} class="h-5" />
     </div>
     <div class="flex items-center justify-end gap-2">
-      <span>{mcount}</span>
+      <span>{mcount.toFixed($toFix)}</span>
       <img src={'/assets/MACHINES_' + machine.toUpperCase() + '_TOP.png'} alt={machine} class="h-5" />    </div>
   </div>
   {/each}
