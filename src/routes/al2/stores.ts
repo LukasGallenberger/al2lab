@@ -10,7 +10,7 @@ const expand = (item, count, depth = 0) => {
     item: item,
     count: count,
     craft: resources[item].craft,
-    mcount: count * get(settings)[resources[item].craft],
+    mcount: count * machines[resources[item].craft].speed[get(settings)[resources[item].craft]],
     depth: depth
   }]
   if(resources[item]){

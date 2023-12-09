@@ -12,7 +12,7 @@
     <Accordion.Trigger>Factory</Accordion.Trigger>
     <Accordion.Content>
       <div class="flex flex-col gap-2 py-2 pr-4">
-        {#each Object.entries(machines) as [machine, _]}
+        {#each Object.entries(machines) as [machine, { speed }]}
         <div class="flex gap-2 items-center">
           <Tooltip.Root>
             <Tooltip.Trigger class="w-8">
@@ -22,12 +22,8 @@
               {machine[0].toUpperCase() + machine.replaceAll('_', ' ').slice(1)}
             </Tooltip.Content>
           </Tooltip.Root>
-          <span class="w-16">{$settings[machine][0].toFixed(1)}s</span>
-          {#if machine.includes('starter')}
-          <Slider max={5} min={0.5} step={0.5} bind:value={$settings[machine]} />
-          {:else}
-          <Slider max={5} min={1} bind:value={$settings[machine]} />
-          {/if}
+          <span class="w-16">{speed[$settings[machine][0]].toFixed(2)}s</span>
+          <Slider max={speed.length - 1} min={0} step={1} bind:value={$settings[machine]} />
         </div>
         {/each}
       </div>
