@@ -2,7 +2,7 @@ import { writable, get, derived, readable } from 'svelte/store'
 import resources from '$lib/resources.json'
 import machines from '$lib/machines.json'
 
-export const objective = writable({ item: 'nuclear_core', count: 2 })
+export const objective = writable({ item: '', count: 1 })
 export const settings = writable(Object.fromEntries(Object.keys(machines).map((key) => [key, [0]])))
 
 export const toFix = derived([objective], ([{ _, count }]) => {
