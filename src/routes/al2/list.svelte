@@ -9,7 +9,7 @@
 
 <div class="flex flex-col">
   {#each $list as { item, count, craft, mcount, depth }}
-  <Collapsible.Root class="space-y-2" open>
+  <Collapsible.Root class="space-y-2">
     <div class="grid grid-cols-4">
       <div class="col-span-2 flex items-center gap-2">
         <Collapsible.Trigger asChild let:builder>
