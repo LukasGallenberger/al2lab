@@ -2,7 +2,7 @@ import { writable, get, derived, readable } from 'svelte/store'
 import resources from '$lib/resources.json'
 import machines from '$lib/machines.json'
 
-export const objective = writable({ item: '', count: 1 })
+export const objective = writable({ item: 'nuclear_core', count: 2 })
 export const settings = writable(Object.fromEntries(Object.keys(machines).map((key) => [key, [0]])))
 
 export const toFix = derived([objective], ([{ _, count }]) => {
@@ -39,7 +39,11 @@ const compile = (data) => {
   for(let { item, count, craft, mcount, depth } of data){
     list[craft].items[item].count += count
     list[craft].items[item].mcount += mcount
-    list[craft].count += Math.ceil(mcount)
+  }
+  for(let craft in list){
+    for(let item in list[craft].items){
+      list[craft].count += Math.ceil(list[craft].items[item].mcount)
+    }
   }
   return list
 }
