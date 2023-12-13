@@ -9,7 +9,7 @@
 
 <div class="flex flex-col">
   {#each $list as { item, count, craft, mcount, depth }}
-  <Collapsible.Root class="space-y-2">
+  <Collapsible.Root class="space-y-2" open>
     <div class="grid grid-cols-4">
       <div class="col-span-2 flex items-center gap-2">
         <Collapsible.Trigger asChild let:builder>
@@ -37,9 +37,14 @@
     <Collapsible.Content class="pb-2">
       <div class="rounded-md border text-sm p-4">
         <div class="flex flex-col gap-2">
-          <div class="flex gap-2 items-center">
+          <div class="flex gap-3 items-center">
             {#each Object.entries(resources[item].items) as [subitem, count]}
-            <img class="h-5" src={'/assets/RESOURCES_' + subitem.toUpperCase() + '.png'} alt={subitem} />
+            <div class="relative">
+              <img class="h-5" src={'/assets/RESOURCES_' + subitem.toUpperCase() + '.png'} alt={subitem} />
+              <div class="top-2 left-2 absolute bg-black/50 rounded-full px-1">                
+                <span class="text-xs text-white">{count}</span>
+              </div>
+            </div>
             {/each}
             <ChevronRight />
             <img class="h-5" src={'/assets/RESOURCES_' + item.toUpperCase() + '.png'} alt={item} />
