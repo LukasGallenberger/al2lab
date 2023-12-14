@@ -6,7 +6,7 @@ export const objective = writable({ item: '', count: 1 })
 export const settings = writable(Object.fromEntries(Object.keys(machines).map((key) => [key, [0]])))
 
 export const toFix = derived([objective], ([{ _, count }]) => {
-  return count % 1 === 0 ? 1 : count.toString().split('.')[1].length + 1
+  return count % 1 === 0 ? 2 : count.toString().split('.')[1].length + 2
 })
 
 const expand = (item, count, depth = 0) => {
