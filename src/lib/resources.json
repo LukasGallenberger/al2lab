@@ -169,39 +169,39 @@
   },
   "plutonium_cell": {
     "items": {
-      "plutonium": 10,
-      "solar_cell": 10,
-      "diamond_liquid": 5,
-      "gold_cable": 5,
-      "copper_cable": 5
+      "plutonium": 2,
+      "solar_cell": 2,
+      "diamond_liquid": 2,
+      "gold_cable": 2,
+      "copper_cable": 2
     },
     "craft": "radioactive_crafter_mk1"
   },
   "uranium_cell": {
     "items": {
-      "uranium": 10,
-      "solar_cell": 10,
-      "diamond_liquid": 5,
-      "gold_cable": 5,
-      "copper_cable": 5
+      "uranium": 2,
+      "solar_cell": 2,
+      "diamond_liquid": 2,
+      "gold_cable": 2,
+      "copper_cable": 2
     },
     "craft": "radioactive_crafter_mk1"
   },
   "nuclear_cell": {
     "items": {
-      "uranium_cell": 2,
-      "plutonium_cell": 2,
-      "solar_cell": 5,
-      "electric_board": 5,
-      "heater_plate": 5
+      "uranium_cell": 1,
+      "plutonium_cell": 1,
+      "solar_cell": 3,
+      "electric_board": 3,
+      "heater_plate": 3
     },
     "craft": "radioactive_crafter_mk1"
   },
   "nuclear_core": {
     "items": {
-      "nuclear_cell": 3,
-      "uranium_cell": 5,
-      "plutonium_cell": 5,
+      "nuclear_cell": 1,
+      "uranium_cell": 1,
+      "plutonium_cell": 1,
       "processor": 10,
       "diamond_cable": 4,
       "gold_cable": 4
@@ -210,40 +210,40 @@
   },
   "plutonium_circuit": {
     "items": {
-      "plutonium": 10,
-      "circuit": 10,
-      "copper": 10,
-      "gold_cable": 3,
-      "diamond_wire": 10
+      "plutonium": 4,
+      "circuit": 5,
+      "copper": 5,
+      "gold_cable": 1,
+      "diamond_wire": 2
     },
     "craft": "radioactive_crafter_mk1"
   },
   "uranium_circuit": {
     "items": {
-      "uranium": 10,
-      "circuit": 10,
-      "copper": 10,
-      "gold_cable": 3,
-      "diamond_wire": 10
+      "uranium": 4,
+      "circuit": 5,
+      "copper": 5,
+      "gold_cable": 1,
+      "diamond_wire": 2
     },
     "craft": "radioactive_crafter_mk1"
   },
   "nuclear_circuit": {
     "items": {
-      "uranium_circuit": 2,
-      "plutonium_circuit": 2,
-      "circuit": 5,
-      "gold_cable": 5,
+      "uranium_circuit": 1,
+      "plutonium_circuit": 1,
+      "circuit": 3,
+      "gold_cable": 3,
       "processor": 3
     },
     "craft": "radioactive_crafter_mk1"
   },
   "nuclear_processor": {
     "items": {
-      "nuclear_circuit": 3,
-      "uranium_circuit": 5,
-      "plutonium_circuit": 5,
-      "ai_processor": 2,
+      "nuclear_circuit": 1,
+      "uranium_circuit": 1,
+      "plutonium_circuit": 1,
+      "ai_processor": 1,
       "processor": 5,
       "diamond_plate": 10
     },
@@ -278,12 +278,12 @@
   },
   "atomic_bomb": {
     "items": {
-      "nuclear_processor": 2,
-      "nuclear_core": 2,
-      "ignition_system": 5,
-      "nuclear_cell": 5,
-      "uranium": 30,
-      "plutonium": 30
+      "nuclear_processor": 1,
+      "nuclear_core": 1,
+      "ignition_system": 1,
+      "nuclear_cell": 1,
+      "uranium": 15,
+      "plutonium": 15
     },
     "craft": "radioactive_crafter_mk2"
   },
@@ -291,10 +291,10 @@
     "items": {
       "atomic_bomb": 1,
       "ai_robot": 1,
-      "ai_processor": 5,
-      "nuclear_cell": 5,
-      "nuclear_processor": 5,
-      "nuclear_circuit": 5
+      "ai_processor": 2,
+      "nuclear_cell": 3,
+      "nuclear_processor": 1,
+      "nuclear_circuit": 3
     },
     "craft": "radioactive_crafter_mk2"
   },
