@@ -1,10 +1,11 @@
 <script>
   import * as Card from "$lib/components/ui/card"
   import * as Tabs from "$lib/components/ui/tabs"
-  import { ListTree, Workflow, Database } from "lucide-svelte"
+  import { ListTree, Workflow, Database, BarChart } from "lucide-svelte"
 
   import List from './list.svelte'
   import Data from './data.svelte'
+  import Overview from './overview.svelte'
 </script>
 
 <Card.Root>
@@ -23,6 +24,9 @@
         <Tabs.Trigger value="data" class="flex gap-2">
           <Database size="16"/> Data
         </Tabs.Trigger>
+        <Tabs.Trigger value="overview" class="flex gap-2">
+          <BarChart size="16"/> Overview
+        </Tabs.Trigger>
       </Tabs.List>
       <Tabs.Content value="list">
         <List/>
@@ -32,6 +36,9 @@
       </Tabs.Content>
       <Tabs.Content value="data">
         <Data/>
+      </Tabs.Content>
+      <Tabs.Content value="overview">
+        <Overview/>
       </Tabs.Content>
     </Tabs.Root>
   </Card.Content>
